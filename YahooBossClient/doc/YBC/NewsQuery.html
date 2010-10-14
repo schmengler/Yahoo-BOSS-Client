@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class NewsQuery</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class NewsQuery</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+											<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+						
+			</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">News search query</p>
+<p class="description"><p>BOSS Version: v1 (state: 2010-10-13)</p></p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Fabian Schmengler &lt;<a href="mailto:fschmengler@sgh-it.eu">fschmengler@sgh-it.eu</a>&gt;</li>
+				<li><span class="field">version:</span> 1.0</li>
+				<li><span class="field">copyright:</span> &amp;copy; 2010 SGH informationstechnologie UG</li>
+				<li><span class="field">link:</span> <a href="http://creativecommons.org/licenses/BSD/">http://creativecommons.org/licenses/BSD/</a></li>
+				<li><span class="field">license:</span> BSD</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_YBC---NewsQuery.php.html">/YBC/NewsQuery.php</a> (line <span class="field"><a href="../__filesource/fsource_YBC__YBCNewsQuery.php.html#a15">15</a></span>)
+		</p>
+		
+				
+		<pre><a href="../YBC/AbstractQuery.html">AbstractQuery</a>
+   |
+   --NewsQuery</pre>
+	
+			</div>
+</div>
+
+
+	<a name="sec-const-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Class Constant Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Constants</span> (<a href="#sec-consts">details</a>)
+												<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<div class="const-summary">
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#ORDERBY_DATE" title="details" class="const-name">ORDERBY_DATE</a> = 					<span class="var-type"> 'date'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#ORDERBY_RELEVANCE" title="details" class="const-name">ORDERBY_RELEVANCE</a> = 					<span class="var-type"> 'relevance'</span>
+
+				</div>
+							</div>
+		</div>
+	</div>
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+															<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$age" title="details" class="var-name">$age</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$orderby" title="details" class="var-name">$orderby</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																				
+												<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getAge" title="details" class="method-name">getAge</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getOrderBy" title="details" class="method-name">getOrderBy</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getVertical" title="details" class="method-name">getVertical</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setAge" title="details" class="method-name">setAge</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$age</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setLanguageView" title="details" class="method-name">setLanguageView</a>
+											(<span class="var-type">bool</span>&nbsp;<span class="var-name">$active</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setOrderBy" title="details" class="method-name">setOrderBy</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$orderBy</span>)
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+												<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$age" id="$age"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$age</span>
+			 = <span class="var-default"> '7d'</span>			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCNewsQuery.php.html#a33">33</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">var:</span> Age can be specified using a string made an integer and one of the letters &quot;s&quot;, &quot;m&quot;, &quot;h&quot;, &quot;d&quot; and &quot;w&quot; representing seconds, minutes, hours, days and weeks.</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$orderby" id="$orderby"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$orderby</span>
+			 = <span class="var-default"> 'relevance'</span>			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCNewsQuery.php.html#a37">37</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">var:</span> To order by date add orderby=date to the query string. Results will be returned with the most recent first.</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+							<h4>Inherited Variables</h4>
+				<A NAME='inherited_vars'><!-- --></A>
+									<p>Inherited from <span class="classname"><a href="../YBC/AbstractQuery.html">AbstractQuery</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../YBC/AbstractQuery.html#var$count">AbstractQuery::$count</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../YBC/AbstractQuery.html#var$lang">AbstractQuery::$lang</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../YBC/AbstractQuery.html#var$query">AbstractQuery::$query</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../YBC/AbstractQuery.html#var$region">AbstractQuery::$region</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../YBC/AbstractQuery.html#var$sites">AbstractQuery::$sites</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../YBC/AbstractQuery.html#var$start">AbstractQuery::$start</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../YBC/AbstractQuery.html#var$strictlang">AbstractQuery::$strictlang</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../YBC/AbstractQuery.html#var$style">AbstractQuery::$style</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../YBC/AbstractQuery.html#var$view">AbstractQuery::$view</a></span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																			<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+										<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="methodgetAge" id="getAge"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getAge</span> (line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCNewsQuery.php.html#a45">45</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">return:</span> Age specification: An integer and one of the letters &quot;s&quot;, &quot;m&quot;, &quot;h&quot;, &quot;d&quot; and &quot;w&quot; representing seconds, minutes, hours, days and weeks.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getAge
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetOrderBy" id="getOrderBy"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getOrderBy</span> (line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCNewsQuery.php.html#a51">51</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">return:</span> Order specification: 'date' or 'relevance'</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getOrderBy
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetVertical" id="getVertical"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getVertical</span> (line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCNewsQuery.php.html#a39">39</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getVertical
+		</span>
+				()
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../YBC/AbstractQuery.html#methodgetVertical">AbstractQuery::getVertical()</a></dt>
+						<dd>Identifies search type (web, images, news)</dd>
+					</dl>
+			
+	</div>
+<a name="methodsetAge" id="setAge"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setAge</span> (line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCNewsQuery.php.html#a74">74</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets document age restriction</p>
+<p class="description"><p>Use age to retrieve documents by age:  setAge('[value]d')  NOTE: Maximum [value] cannot be greater than 1000.  The default is 30 days, and valid values are [1-30]d. (News Search maintains a 30-day index.) The following example searches the full index:  setAge('30d')  Age can be specified using a string made an integer and one of the letters &quot;s&quot;, &quot;m&quot;, &quot;h&quot;, &quot;d&quot; and &quot;w&quot; representing seconds, minutes, hours, days and weeks.  No spaces are allowed in the string. Some examples:  setAge('30d');  setAge('1w');  setAge('12h');  To specify an age range two values can be concatenated with a dash/hyphen for example:  setAge('5d-10d'); // Between 5 and 10 days old  setAge('2w-30d'); // Between 2 weeks and 30 days old  Multiple ranges or more than one age parameter is not supported.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setAge
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$age</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$age</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetLanguageView" id="setLanguageView"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setLanguageView</span> (line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCNewsQuery.php.html#a100">100</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Define if results should contain the language attribute</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setLanguageView
+		</span>
+					(<span class="var-type">bool</span>&nbsp;<span class="var-name">$active</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$active</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetOrderBy" id="setOrderBy"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setOrderBy</span> (line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCNewsQuery.php.html#a87">87</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets result order</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setOrderBy
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$orderBy</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$orderBy</span><span class="var-description">: valid values are YBC\NewsQuery::ORDERBY_RELEVANCE and YBC\NewsQuery::ORDERBY_DATE</span>			</li>
+				</ul>
+		
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../YBC/AbstractQuery.html">AbstractQuery</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../YBC/AbstractQuery.html#method__construct">AbstractQuery::__construct()</a></span><br>
+													<span class="method-name"><a href="../YBC/AbstractQuery.html#methodaddSite">AbstractQuery::addSite()</a></span><br>
+													<span class="method-name"><a href="../YBC/AbstractQuery.html#methodgetBossUrl">AbstractQuery::getBossUrl()</a></span><br>
+													<span class="method-name"><a href="../YBC/AbstractQuery.html#methodgetCount">AbstractQuery::getCount()</a></span><br>
+													<span class="method-name"><a href="../YBC/AbstractQuery.html#methodgetLang">AbstractQuery::getLang()</a></span><br>
+													<span class="method-name"><a href="../YBC/AbstractQuery.html#methodgetLocale">AbstractQuery::getLocale()</a></span><br>
+													<span class="method-name"><a href="../YBC/AbstractQuery.html#methodgetParameterString">AbstractQuery::getParameterString()</a></span><br>
+													<span class="method-name"><a href="../YBC/AbstractQuery.html#methodgetQuery">AbstractQuery::getQuery()</a></span><br>
+													<span class="method-name"><a href="../YBC/AbstractQuery.html#methodgetRegion">AbstractQuery::getRegion()</a></span><br>
+													<span class="method-name"><a href="../YBC/AbstractQuery.html#methodgetSites">AbstractQuery::getSites()</a></span><br>
+													<span class="method-name"><a href="../YBC/AbstractQuery.html#methodgetStart">AbstractQuery::getStart()</a></span><br>
+													<span class="method-name"><a href="../YBC/AbstractQuery.html#methodgetStyle">AbstractQuery::getStyle()</a></span><br>
+													<span class="method-name"><a href="../YBC/AbstractQuery.html#methodgetVertical">AbstractQuery::getVertical()</a></span><br>
+													<span class="method-name"><a href="../YBC/AbstractQuery.html#methodgetView">AbstractQuery::getView()</a></span><br>
+													<span class="method-name"><a href="../YBC/AbstractQuery.html#methodisRawStyle">AbstractQuery::isRawStyle()</a></span><br>
+													<span class="method-name"><a href="../YBC/AbstractQuery.html#methodisStrictLang">AbstractQuery::isStrictLang()</a></span><br>
+													<span class="method-name"><a href="../YBC/AbstractQuery.html#methodsetLimit">AbstractQuery::setLimit()</a></span><br>
+													<span class="method-name"><a href="../YBC/AbstractQuery.html#methodsetLocale">AbstractQuery::setLocale()</a></span><br>
+													<span class="method-name"><a href="../YBC/AbstractQuery.html#methodsetQuery">AbstractQuery::setQuery()</a></span><br>
+													<span class="method-name"><a href="../YBC/AbstractQuery.html#methodsetRawStyle">AbstractQuery::setRawStyle()</a></span><br>
+													<span class="method-name"><a href="../YBC/AbstractQuery.html#methodsetSites">AbstractQuery::setSites()</a></span><br>
+													<span class="method-name"><a href="../YBC/AbstractQuery.html#methodsetStrictLang">AbstractQuery::setStrictLang()</a></span><br>
+													<span class="method-name"><a href="../YBC/AbstractQuery.html#methodsetView">AbstractQuery::setView()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+	<a name="sec-consts"></a>
+	<div class="info-box">
+		<div class="info-box-title">Class Constants</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Constants</a> (<span class="disabled">details</span>)
+						
+			
+												<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+														| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="constORDERBY_DATE" id="ORDERBY_DATE"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">ORDERBY_DATE</span>
+			 = <span class="const-default"> 'date'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCNewsQuery.php.html#a24">24</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">var:</span> Results will be returned with the most recent first</li>
+			</ul>
+	
+	
+</div>
+<a name="constORDERBY_RELEVANCE" id="ORDERBY_RELEVANCE"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">ORDERBY_RELEVANCE</span>
+			 = <span class="const-default"> 'relevance'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCNewsQuery.php.html#a20">20</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">var:</span> Results will be returned with the most relevant first</li>
+			</ul>
+	
+	
+</div>
+							<h4>Inherited Constants</h4>
+				<A NAME='inherited_vars'><!-- --></A>
+									<p>Inherited from <span class="classname"><a href="../YBC/AbstractQuery.html">AbstractQuery</a></span></p>
+					<blockquote>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name"><a href="../YBC/AbstractQuery.html#constLOCALE_ARGENTINA">AbstractQuery::LOCALE_ARGENTINA</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name"><a href="../YBC/AbstractQuery.html#constLOCALE_AUSTRALIA">AbstractQuery::LOCALE_AUSTRALIA</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name"><a href="../YBC/AbstractQuery.html#constLOCALE_AUSTRIA">AbstractQuery::LOCALE_AUSTRIA</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name"><a href="../YBC/AbstractQuery.html#constLOCALE_BRAZIL">AbstractQuery::LOCALE_BRAZIL</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name"><a href="../YBC/AbstractQuery.html#constLOCALE_CANADA_ENGLISH">AbstractQuery::LOCALE_CANADA_ENGLISH</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name"><a href="../YBC/AbstractQuery.html#constLOCALE_CANADA_FRENCH">AbstractQuery::LOCALE_CANADA_FRENCH</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name"><a href="../YBC/AbstractQuery.html#constLOCALE_CATALAN">AbstractQuery::LOCALE_CATALAN</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name"><a href="../YBC/AbstractQuery.html#constLOCALE_CHILE">AbstractQuery::LOCALE_CHILE</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name"><a href="../YBC/AbstractQuery.html#constLOCALE_COLUMBIA">AbstractQuery::LOCALE_COLUMBIA</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name"><a href="../YBC/AbstractQuery.html#constLOCALE_CZECH_REPUBLIC">AbstractQuery::LOCALE_CZECH_REPUBLIC</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name"><a href="../YBC/AbstractQuery.html#constLOCALE_DENMARK">AbstractQuery::LOCALE_DENMARK</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name"><a href="../YBC/AbstractQuery.html#constLOCALE_FINLAND">AbstractQuery::LOCALE_FINLAND</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name"><a href="../YBC/AbstractQuery.html#constLOCALE_FRANCE">AbstractQuery::LOCALE_FRANCE</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name"><a href="../YBC/AbstractQuery.html#constLOCALE_GERMANY">AbstractQuery::LOCALE_GERMANY</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name"><a href="../YBC/AbstractQuery.html#constLOCALE_HONG_KONG">AbstractQuery::LOCALE_HONG_KONG</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name"><a href="../YBC/AbstractQuery.html#constLOCALE_HUNGARY">AbstractQuery::LOCALE_HUNGARY</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name"><a href="../YBC/AbstractQuery.html#constLOCALE_INDIA">AbstractQuery::LOCALE_INDIA</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name"><a href="../YBC/AbstractQuery.html#constLOCALE_INDONESIA_ENGLISH">AbstractQuery::LOCALE_INDONESIA_ENGLISH</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name"><a href="../YBC/AbstractQuery.html#constLOCALE_INDONESIA_INDONESIAN">AbstractQuery::LOCALE_INDONESIA_INDONESIAN</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name"><a href="../YBC/AbstractQuery.html#constLOCALE_ISRAEL">AbstractQuery::LOCALE_ISRAEL</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name"><a href="../YBC/AbstractQuery.html#constLOCALE_ITALY">AbstractQuery::LOCALE_ITALY</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name"><a href="../YBC/AbstractQuery.html#constLOCALE_JAPAN">AbstractQuery::LOCALE_JAPAN</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name"><a href="../YBC/AbstractQuery.html#constLOCALE_KOREA">AbstractQuery::LOCALE_KOREA</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name"><a href="../YBC/AbstractQuery.html#constLOCALE_MALAYSIA">AbstractQuery::LOCALE_MALAYSIA</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name"><a href="../YBC/AbstractQuery.html#constLOCALE_MALAYSIA_ENGLISH">AbstractQuery::LOCALE_MALAYSIA_ENGLISH</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name"><a href="../YBC/AbstractQuery.html#constLOCALE_MEXICO">AbstractQuery::LOCALE_MEXICO</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name"><a href="../YBC/AbstractQuery.html#constLOCALE_NETHERLANDS">AbstractQuery::LOCALE_NETHERLANDS</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name"><a href="../YBC/AbstractQuery.html#constLOCALE_NEW_ZEALAND">AbstractQuery::LOCALE_NEW_ZEALAND</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name"><a href="../YBC/AbstractQuery.html#constLOCALE_NORWAY">AbstractQuery::LOCALE_NORWAY</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name"><a href="../YBC/AbstractQuery.html#constLOCALE_PERU">AbstractQuery::LOCALE_PERU</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name"><a href="../YBC/AbstractQuery.html#constLOCALE_PHILIPPINES">AbstractQuery::LOCALE_PHILIPPINES</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name"><a href="../YBC/AbstractQuery.html#constLOCALE_PHILIPPINES_ENGLISH">AbstractQuery::LOCALE_PHILIPPINES_ENGLISH</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name"><a href="../YBC/AbstractQuery.html#constLOCALE_ROMANIA">AbstractQuery::LOCALE_ROMANIA</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name"><a href="../YBC/AbstractQuery.html#constLOCALE_RUSSIA">AbstractQuery::LOCALE_RUSSIA</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name"><a href="../YBC/AbstractQuery.html#constLOCALE_SINGAPORE">AbstractQuery::LOCALE_SINGAPORE</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name"><a href="../YBC/AbstractQuery.html#constLOCALE_SPAIN">AbstractQuery::LOCALE_SPAIN</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name"><a href="../YBC/AbstractQuery.html#constLOCALE_SWEDEN">AbstractQuery::LOCALE_SWEDEN</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name"><a href="../YBC/AbstractQuery.html#constLOCALE_SWITZERLAND_FRENCH">AbstractQuery::LOCALE_SWITZERLAND_FRENCH</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name"><a href="../YBC/AbstractQuery.html#constLOCALE_SWITZERLAND_GERMAN">AbstractQuery::LOCALE_SWITZERLAND_GERMAN</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name"><a href="../YBC/AbstractQuery.html#constLOCALE_SWITZERLAND_ITALIAN">AbstractQuery::LOCALE_SWITZERLAND_ITALIAN</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name"><a href="../YBC/AbstractQuery.html#constLOCALE_TAIWAN">AbstractQuery::LOCALE_TAIWAN</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name"><a href="../YBC/AbstractQuery.html#constLOCALE_THAILAND">AbstractQuery::LOCALE_THAILAND</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name"><a href="../YBC/AbstractQuery.html#constLOCALE_TURKEY">AbstractQuery::LOCALE_TURKEY</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name"><a href="../YBC/AbstractQuery.html#constLOCALE_UNITED_KINGDOM">AbstractQuery::LOCALE_UNITED_KINGDOM</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name"><a href="../YBC/AbstractQuery.html#constLOCALE_UNITED_STATES_ENGLISH">AbstractQuery::LOCALE_UNITED_STATES_ENGLISH</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name"><a href="../YBC/AbstractQuery.html#constLOCALE_UNITED_STATES_SPANISH">AbstractQuery::LOCALE_UNITED_STATES_SPANISH</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name"><a href="../YBC/AbstractQuery.html#constLOCALE_VENEZUELA">AbstractQuery::LOCALE_VENEZUELA</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name"><a href="../YBC/AbstractQuery.html#constLOCALE_VIETNAM">AbstractQuery::LOCALE_VIETNAM</a></span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+
+	<p class="notes" id="credit">
+		Documentation generated on Thu, 14 Oct 2010 18:17:30 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.1</a>
+	</p>
+	</div></body>
+</html>

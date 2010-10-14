@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class ResultSet</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class ResultSet</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+                <p class="implements">
+            Implements interfaces:
+            <ul>
+                <li>IteratorAggregate (internal interface)</li>            </ul>
+        </p>
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Result set returned by search query</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Fabian Schmengler &lt;<a href="mailto:fschmengler@sgh-it.eu">fschmengler@sgh-it.eu</a>&gt;</li>
+				<li><span class="field">version:</span> 1.0</li>
+				<li><span class="field">copyright:</span> &amp;copy; 2010 SGH informationstechnologie UG</li>
+				<li><span class="field">link:</span> <a href="http://creativecommons.org/licenses/BSD/">http://creativecommons.org/licenses/BSD/</a></li>
+				<li><span class="field">license:</span> BSD</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_YBC---ResultSet.php.html">/YBC/ResultSet.php</a> (line <span class="field"><a href="../__filesource/fsource_YBC__YBCResultSet.php.html#a13">13</a></span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+												<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																												
+												<div class="method-definition">
+											<span class="method-result">ResultSet</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$responseArray</span>, <span class="var-type"><a href="../YBC/Query.html">Query</a></span>&nbsp;<span class="var-name">$query</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$time</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">int</span>
+										<a href="#getCount" title="details" class="method-name">getCount</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">int</span>
+										<a href="#getDeephits" title="details" class="method-name">getDeephits</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">\ArrayIterator</span>
+										<a href="#getIterator" title="details" class="method-name">getIterator</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getNextpage" title="details" class="method-name">getNextpage</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">YBC\Query</span>
+										<a href="#getNextpageQuery" title="details" class="method-name">getNextpageQuery</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">YBC\Query</span>
+										<a href="#getQuery" title="details" class="method-name">getQuery</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">int</span>
+										<a href="#getResponsecode" title="details" class="method-name">getResponsecode</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">YBC\Result[]</span>
+										<a href="#getResults" title="details" class="method-name">getResults</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">int</span>
+										<a href="#getStart" title="details" class="method-name">getStart</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">int</span>
+										<a href="#getTotalhits" title="details" class="method-name">getTotalhits</a>
+										()
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCResultSet.php.html#a45">45</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">ResultSet</span>
+		<span class="method-name">
+			__construct
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$responseArray</span>, <span class="var-type"><a href="../YBC/Query.html">Query</a></span>&nbsp;<span class="var-name">$query</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$time</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$responseArray</span><span class="var-description">: Array from JSON response</span>			</li>
+					<li>
+				<span class="var-type"><a href="../YBC/Query.html">Query</a></span>
+				<span class="var-name">$query</span><span class="var-description">: Corresponding Query object</span>			</li>
+					<li>
+				<span class="var-type">\DateTime</span>
+				<span class="var-name">$time</span><span class="var-description">: Time when the Result was fetched from BOSS API</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetCount" id="getCount"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getCount</span> (line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCResultSet.php.html#a143">143</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">return:</span> Indicates how many results to show per page. The value shown in results is the smaller of the default or explicit “count” request argument value or the actual number of results in the response. The result set will include the requested “count” unless there are fewer than that number of matching documents.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			getCount
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetDeephits" id="getDeephits"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getDeephits</span> (line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCResultSet.php.html#a137">137</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">return:</span> It returns an approximate count that reflects duplicate documents and all documents from a host. deephits, therefore, is invariably equal to or larger than TotalHits. The deephits value is normally used as an information display on a search result page, reporting how many total documents matched the search terms.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			getDeephits
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetIterator" id="getIterator"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getIterator</span> (line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCResultSet.php.html#a87">87</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Implementation of IteratorAggregate</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Iterator over results.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">\ArrayIterator</span>
+		<span class="method-name">
+			getIterator
+		</span>
+				()
+			</div>
+	
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt>IteratorAggregate::getIterator</dt>
+					</dl>
+			
+	</div>
+<a name="methodgetNextpage" id="getNextpage"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getNextpage</span> (line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCResultSet.php.html#a106">106</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">return:</span> BOSS API query string for the next page</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getNextpage
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetNextpageQuery" id="getNextpageQuery"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getNextpageQuery</span> (line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCResultSet.php.html#a115">115</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns Query object for the next page</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Query object for the next page</li>
+				<li><span class="field">todo:</span> allow other query implementations?</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">YBC\Query</span>
+		<span class="method-name">
+			getNextpageQuery
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetQuery" id="getQuery"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getQuery</span> (line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCResultSet.php.html#a94">94</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">return:</span> Query that retrieved this resultset</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">YBC\Query</span>
+		<span class="method-name">
+			getQuery
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetResponsecode" id="getResponsecode"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getResponsecode</span> (line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCResultSet.php.html#a100">100</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">return:</span> Response code, should be 200</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			getResponsecode
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetResults" id="getResults"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getResults</span> (line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCResultSet.php.html#a155">155</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">return:</span> array of results</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">YBC\Result[]</span>
+		<span class="method-name">
+			getResults
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetStart" id="getStart"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getStart</span> (line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCResultSet.php.html#a149">149</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">return:</span> The first numeric result to display. The value shown in results echoes the default or explicit “start” request argument value. When used with ”count”, you can display follow-on pages of results.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			getStart
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetTotalhits" id="getTotalhits"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getTotalhits</span> (line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCResultSet.php.html#a131">131</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">return:</span> A result count that reflects no duplicates. The totalhits value is an approximation, and its value may change depending on the requested “start” and “count” values, because the approximation is adjusted as more exact result URLs are processed. A normal use for totalhits is to determine how many pages of results to offer in search result navigation. Since totalhits is an approximation, and the value may change as “start” increases on successive result pages, the result page navigation may need to be adjusted as a user browses result pages.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			getTotalhits
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Thu, 14 Oct 2010 18:17:41 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.1</a>
+	</p>
+	</div></body>
+</html>

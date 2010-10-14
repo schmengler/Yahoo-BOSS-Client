@@ -1,0 +1,2205 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class AbstractQuery</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class AbstractQuery</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+							<a href="#sec-descendents">Descendents</a>
+			|											<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+											<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+						
+			</div>
+	<div class="info-box-body">
+                <p class="implements">
+            Implements interfaces:
+            <ul>
+                <li><a href="../YBC/Query.html">Query</a></li>            </ul>
+        </p>
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Abstract class for search queries</p>
+<p class="description"><p>BOSS Version: v1 (state: 2010-10-13)</p></p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Fabian Schmengler &lt;<a href="mailto:fschmengler@sgh-it.eu">fschmengler@sgh-it.eu</a>&gt;</li>
+				<li><span class="field">version:</span> 1.0</li>
+				<li><span class="field">copyright:</span> &amp;copy; 2010 SGH informationstechnologie UG</li>
+				<li><span class="field">link:</span> <a href="http://creativecommons.org/licenses/BSD/">http://creativecommons.org/licenses/BSD/</a></li>
+				<li><span class="field">abstract:</span> </li>
+				<li><span class="field">license:</span> BSD</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_YBC---AbstractQuery.php.html">/YBC/AbstractQuery.php</a> (line <span class="field"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a15">15</a></span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+	<a name="sec-descendents"></a>
+	<div class="info-box">
+		<div class="info-box-title">Direct descendents</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+			<span class="disabled">Descendents</span>
+			|												<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+								|															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+															<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<table cellpadding="2" cellspacing="0" class="class-table">
+				<tr>
+					<th class="class-table-header">Class</th>
+					<th class="class-table-header">Description</th>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../YBC/ImagesQuery.html">ImagesQuery</a></td>
+					<td>
+											Image search query
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../YBC/NewsQuery.html">NewsQuery</a></td>
+					<td>
+											News search query
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../YBC/WebQuery.html">WebQuery</a></td>
+					<td>
+											Web search query
+										</td>
+				</tr>
+							</table>
+		</div>
+	</div>
+
+	<a name="sec-const-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Class Constant Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendants</a> |
+						<span class="disabled">Constants</span> (<a href="#sec-consts">details</a>)
+												<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<div class="const-summary">
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#LOCALE_ARGENTINA" title="details" class="const-name">LOCALE_ARGENTINA</a> = 					<span class="var-type"> 'Argentina'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#LOCALE_AUSTRALIA" title="details" class="const-name">LOCALE_AUSTRALIA</a> = 					<span class="var-type"> 'Australia'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#LOCALE_AUSTRIA" title="details" class="const-name">LOCALE_AUSTRIA</a> = 					<span class="var-type"> 'Austria'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#LOCALE_BRAZIL" title="details" class="const-name">LOCALE_BRAZIL</a> = 					<span class="var-type"> 'Brazil'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#LOCALE_CANADA_ENGLISH" title="details" class="const-name">LOCALE_CANADA_ENGLISH</a> = 					<span class="var-type"> 'Canada - English'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#LOCALE_CANADA_FRENCH" title="details" class="const-name">LOCALE_CANADA_FRENCH</a> = 					<span class="var-type"> 'Canada - French'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#LOCALE_CATALAN" title="details" class="const-name">LOCALE_CATALAN</a> = 					<span class="var-type"> 'Catalan'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#LOCALE_CHILE" title="details" class="const-name">LOCALE_CHILE</a> = 					<span class="var-type"> 'Chile'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#LOCALE_COLUMBIA" title="details" class="const-name">LOCALE_COLUMBIA</a> = 					<span class="var-type"> 'Columbia'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#LOCALE_CZECH_REPUBLIC" title="details" class="const-name">LOCALE_CZECH_REPUBLIC</a> = 					<span class="var-type"> 'Czech Republic'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#LOCALE_DENMARK" title="details" class="const-name">LOCALE_DENMARK</a> = 					<span class="var-type"> 'Denmark'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#LOCALE_FINLAND" title="details" class="const-name">LOCALE_FINLAND</a> = 					<span class="var-type"> 'Finland'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#LOCALE_FRANCE" title="details" class="const-name">LOCALE_FRANCE</a> = 					<span class="var-type"> 'France'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#LOCALE_GERMANY" title="details" class="const-name">LOCALE_GERMANY</a> = 					<span class="var-type"> 'Germany'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#LOCALE_HONG_KONG" title="details" class="const-name">LOCALE_HONG_KONG</a> = 					<span class="var-type"> 'Hong Kong'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#LOCALE_HUNGARY" title="details" class="const-name">LOCALE_HUNGARY</a> = 					<span class="var-type"> 'Hungary'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#LOCALE_INDIA" title="details" class="const-name">LOCALE_INDIA</a> = 					<span class="var-type"> 'India'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#LOCALE_INDONESIA_ENGLISH" title="details" class="const-name">LOCALE_INDONESIA_ENGLISH</a> = 					<span class="var-type"> 'Indonesia - English'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#LOCALE_INDONESIA_INDONESIAN" title="details" class="const-name">LOCALE_INDONESIA_INDONESIAN</a> = 					<span class="var-type"> 'Indonesia - Indonesian'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#LOCALE_ISRAEL" title="details" class="const-name">LOCALE_ISRAEL</a> = 					<span class="var-type"> 'Israel'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#LOCALE_ITALY" title="details" class="const-name">LOCALE_ITALY</a> = 					<span class="var-type"> 'Italy'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#LOCALE_JAPAN" title="details" class="const-name">LOCALE_JAPAN</a> = 					<span class="var-type"> 'Japan'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#LOCALE_KOREA" title="details" class="const-name">LOCALE_KOREA</a> = 					<span class="var-type"> 'Korea'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#LOCALE_MALAYSIA" title="details" class="const-name">LOCALE_MALAYSIA</a> = 					<span class="var-type"> 'Malaysia'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#LOCALE_MALAYSIA_ENGLISH" title="details" class="const-name">LOCALE_MALAYSIA_ENGLISH</a> = 					<span class="var-type"> 'Malaysia - English'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#LOCALE_MEXICO" title="details" class="const-name">LOCALE_MEXICO</a> = 					<span class="var-type"> 'Mexico'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#LOCALE_NETHERLANDS" title="details" class="const-name">LOCALE_NETHERLANDS</a> = 					<span class="var-type"> 'Netherlands'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#LOCALE_NEW_ZEALAND" title="details" class="const-name">LOCALE_NEW_ZEALAND</a> = 					<span class="var-type"> 'New Zealand'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#LOCALE_NORWAY" title="details" class="const-name">LOCALE_NORWAY</a> = 					<span class="var-type"> 'Norway'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#LOCALE_PERU" title="details" class="const-name">LOCALE_PERU</a> = 					<span class="var-type"> 'Peru'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#LOCALE_PHILIPPINES" title="details" class="const-name">LOCALE_PHILIPPINES</a> = 					<span class="var-type"> 'Philippines'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#LOCALE_PHILIPPINES_ENGLISH" title="details" class="const-name">LOCALE_PHILIPPINES_ENGLISH</a> = 					<span class="var-type"> 'Philippines - English'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#LOCALE_ROMANIA" title="details" class="const-name">LOCALE_ROMANIA</a> = 					<span class="var-type"> 'Romania'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#LOCALE_RUSSIA" title="details" class="const-name">LOCALE_RUSSIA</a> = 					<span class="var-type"> 'Russia'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#LOCALE_SINGAPORE" title="details" class="const-name">LOCALE_SINGAPORE</a> = 					<span class="var-type"> 'Singapore'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#LOCALE_SPAIN" title="details" class="const-name">LOCALE_SPAIN</a> = 					<span class="var-type"> 'Spain'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#LOCALE_SWEDEN" title="details" class="const-name">LOCALE_SWEDEN</a> = 					<span class="var-type"> 'Sweden'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#LOCALE_SWITZERLAND_FRENCH" title="details" class="const-name">LOCALE_SWITZERLAND_FRENCH</a> = 					<span class="var-type"> 'Switzerland - French'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#LOCALE_SWITZERLAND_GERMAN" title="details" class="const-name">LOCALE_SWITZERLAND_GERMAN</a> = 					<span class="var-type"> 'Switzerland - German'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#LOCALE_SWITZERLAND_ITALIAN" title="details" class="const-name">LOCALE_SWITZERLAND_ITALIAN</a> = 					<span class="var-type"> 'Switzerland - Italian'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#LOCALE_TAIWAN" title="details" class="const-name">LOCALE_TAIWAN</a> = 					<span class="var-type"> 'Taiwan'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#LOCALE_THAILAND" title="details" class="const-name">LOCALE_THAILAND</a> = 					<span class="var-type"> 'Thailand'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#LOCALE_TURKEY" title="details" class="const-name">LOCALE_TURKEY</a> = 					<span class="var-type"> 'Turkey'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#LOCALE_UNITED_KINGDOM" title="details" class="const-name">LOCALE_UNITED_KINGDOM</a> = 					<span class="var-type"> 'United Kingdom'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#LOCALE_UNITED_STATES_ENGLISH" title="details" class="const-name">LOCALE_UNITED_STATES_ENGLISH</a> = 					<span class="var-type"> 'United States - English'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#LOCALE_UNITED_STATES_SPANISH" title="details" class="const-name">LOCALE_UNITED_STATES_SPANISH</a> = 					<span class="var-type"> 'United States - Spanish'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#LOCALE_VENEZUELA" title="details" class="const-name">LOCALE_VENEZUELA</a> = 					<span class="var-type"> 'Venezuela'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#LOCALE_VIETNAM" title="details" class="const-name">LOCALE_VIETNAM</a> = 					<span class="var-type"> 'Vietnam'</span>
+
+				</div>
+							</div>
+		</div>
+	</div>
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+															<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																																																								<div class="var-title">
+					<span class="var-type">int</span>
+					<a href="#$count" title="details" class="var-name">$count</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$lang" title="details" class="var-name">$lang</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$query" title="details" class="var-name">$query</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$region" title="details" class="var-name">$region</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$sites" title="details" class="var-name">$sites</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">int</span>
+					<a href="#$start" title="details" class="var-name">$start</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">int</span>
+					<a href="#$strictlang" title="details" class="var-name">$strictlang</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">bool</span>
+					<a href="#$style" title="details" class="var-name">$style</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$view" title="details" class="var-name">$view</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+															<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																																																												
+												<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addSite" title="details" class="method-name">addSite</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$site</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getBossUrl" title="details" class="method-name">getBossUrl</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$appId</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">int</span>
+										<a href="#getCount" title="details" class="method-name">getCount</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getLang" title="details" class="method-name">getLang</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getLocale" title="details" class="method-name">getLocale</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">url</span>
+										<a href="#getParameterString" title="details" class="method-name">getParameterString</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getQuery" title="details" class="method-name">getQuery</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getRegion" title="details" class="method-name">getRegion</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string[]</span>
+										<a href="#getSites" title="details" class="method-name">getSites</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">int</span>
+										<a href="#getStart" title="details" class="method-name">getStart</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getStyle" title="details" class="method-name">getStyle</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getVertical" title="details" class="method-name">getVertical</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getView" title="details" class="method-name">getView</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#isRawStyle" title="details" class="method-name">isRawStyle</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#isStrictLang" title="details" class="method-name">isStrictLang</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">AbstractQuery</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$query</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">YBC\Query</span>
+										<a href="#setLimit" title="details" class="method-name">setLimit</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$start</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$count</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">YBC\Query</span>
+										<a href="#setLocale" title="details" class="method-name">setLocale</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$locale</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">YBC\Query</span>
+										<a href="#setQuery" title="details" class="method-name">setQuery</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$query</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setRawStyle" title="details" class="method-name">setRawStyle</a>
+											(<span class="var-type">bool</span>&nbsp;<span class="var-name">$raw</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setSites" title="details" class="method-name">setSites</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$sites</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">YBC\Query</span>
+										<a href="#setStrictLang" title="details" class="method-name">setStrictLang</a>
+											(<span class="var-type">bool</span>&nbsp;<span class="var-name">$strict</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setView" title="details" class="method-name">setView</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$view</span>)
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+												<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$count" id="$count"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">int</span>
+			<span class="var-name">$count</span>
+			 = <span class="var-default"> 10</span>			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a130">130</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">var:</span> Total number of results to return. Maximum value is 50. Default sets count to 10.</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$lang" id="$lang"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$lang</span>
+			 = <span class="var-default"> 'en'</span>			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a135">135</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">var:</span> Specifies the language search product to query. Default sets lang to &quot;en&quot;. Must be used in parallel with region. Other language results may appear in results. For strict filtering use the stringlang parameter described below.</li>
+				<li><span class="field">see:</span> $supportedRegionsAndLanguages</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$query" id="$query"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$query</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a122">122</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">var:</span> search term</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$region" id="$region"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$region</span>
+			 = <span class="var-default"> 'us'</span>			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a140">140</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">var:</span> Specifies which regional (country) search product to query. Default sets region to &quot;us&quot;. Must be used in parallel with lang.</li>
+				<li><span class="field">see:</span> $supportedRegionsAndLanguages</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$sites" id="$sites"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$sites</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a148">148</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">var:</span> Restrict BOSS search results to a set of pre-defined sites. Multiple sites must be comma separated. Example: (sites=abc.com,cnn.com). The Images service does not yet support multiple sites.</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$start" id="$start"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">int</span>
+			<span class="var-name">$start</span>
+			 = <span class="var-default"> 0</span>			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a126">126</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">var:</span> Ordinal position of first result. First position is 0. Default sets start to 0.</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$strictlang" id="$strictlang"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">int</span>
+			<span class="var-name">$strictlang</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a144">144</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">var:</span> Default is 0. (no strictness enforced) Setting strictlang=1  activates the strict language filtering based on the lang parameter defined in the query.</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$style" id="$style"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">bool</span>
+			<span class="var-name">$style</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a156">156</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">var:</span> By default for web search result titles and abstracts contain <strong>and</strong> HTML tags around the search term. Use style=raw to remove the bold tags around the search terms in titles and abstracts.</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$view" id="$view"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$view</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a152">152</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../YBC/WebQuery.html#var$view">WebQuery::$view</a>, ImageQuery::$view, NewsQuery::$view</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../YBC/WebQuery.html#var$view">WebQuery::$view</a>
+							</li>
+				</ul>
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																			<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+										<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="methodaddSite" id="addSite"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">addSite</span> (line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a331">331</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Adds site to search</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addSite
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$site</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$site</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetBossUrl" id="getBossUrl"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getBossUrl</span> (line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a370">370</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns full BOSS url with given appId</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getBossUrl
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$appId</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$appId</span>			</li>
+				</ul>
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../YBC/Query.html#methodgetBossUrl">Query::getBossUrl()</a></dt>
+						<dd>Returns full BOSS url with given appId</dd>
+					</dl>
+			
+	</div>
+<a name="methodgetCount" id="getCount"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getCount</span> (line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a196">196</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">return:</span> Total number of results to return.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			getCount
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetLang" id="getLang"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getLang</span> (line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a202">202</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">return:</span> The language search product to query.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getLang
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetLocale" id="getLocale"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getLocale</span> (line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a214">214</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">return:</span> A locale string of format [region]-[lang]</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getLocale
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetParameterString" id="getParameterString"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getParameterString</span> (line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a361">361</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">return:</span> encoded query string</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">url</span>
+		<span class="method-name">
+			getParameterString
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetQuery" id="getQuery"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getQuery</span> (line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a184">184</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">return:</span> Search term</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getQuery
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetRegion" id="getRegion"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getRegion</span> (line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a208">208</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">return:</span> The regional (country) search product to query.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getRegion
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetSites" id="getSites"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getSites</span> (line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a226">226</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">return:</span> Sites to which the search result is restricted. Empty array for no restriction.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string[]</span>
+		<span class="method-name">
+			getSites
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetStart" id="getStart"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getStart</span> (line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a190">190</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">return:</span> Ordinal position of first result. First position is 0.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			getStart
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetStyle" id="getStyle"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getStyle</span> (line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a240">240</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">return:</span> 'raw' if the bold tags around the search terms in titles and abstracts should be removed.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getStyle
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetVertical" id="getVertical"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getVertical</span> (line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a161">161</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Identifies search type (web, images, news)</p>
+	<ul class="tags">
+				<li><span class="field">abstract:</span> </li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getVertical
+		</span>
+				()
+			</div>
+	
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../YBC/ImagesQuery.html#methodgetVertical">ImagesQuery::getVertical()</a>
+							</li>
+					<li>
+				<a href="../YBC/NewsQuery.html#methodgetVertical">NewsQuery::getVertical()</a>
+							</li>
+					<li>
+				<a href="../YBC/WebQuery.html#methodgetVertical">WebQuery::getVertical()</a>
+							</li>
+				</ul>
+	</div>
+<a name="methodgetView" id="getView"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getView</span> (line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a234">234</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">return:</span> View specification</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getView
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodisRawStyle" id="isRawStyle"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">isRawStyle</span> (line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a246">246</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">return:</span> true if the bold tags around the search terms in titles and abstracts should be removed.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			isRawStyle
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodisStrictLang" id="isStrictLang"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">isStrictLang</span> (line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a220">220</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">return:</span> The strict language filtering based on the lang parameter.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			isStrictLang
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a165">165</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">AbstractQuery</span>
+		<span class="method-name">
+			__construct
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$query</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$query</span><span class="var-description">: search term or query string like /ysearch/web/v1/foo?params</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetLimit" id="setLimit"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setLimit</span> (line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a267">267</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets start and count positions of resultset</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">YBC\Query</span>
+		<span class="method-name">
+			setLimit
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$start</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$count</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$start</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$count</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetLocale" id="setLocale"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setLocale</span> (line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a291">291</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets region and lang on the basis of a locale string. The string can be in</p>
+<p class="description"><p>different formats:  'us-en': sets region to 'us' and language to 'en'  'de': sets region to 'de' and language to 'de'  YBC\AbstractQuery::LOCALE_HONG_KONG: sets region to 'hk' and language to 'tzh'</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">YBC\Query</span>
+		<span class="method-name">
+			setLocale
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$locale</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$locale</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetQuery" id="setQuery"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setQuery</span> (line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a255">255</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets search query</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">YBC\Query</span>
+		<span class="method-name">
+			setQuery
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$query</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$query</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetRawStyle" id="setRawStyle"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setRawStyle</span> (line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a353">353</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets style=raw parameter</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setRawStyle
+		</span>
+					(<span class="var-type">bool</span>&nbsp;<span class="var-name">$raw</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$raw</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetSites" id="setSites"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setSites</span> (line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a321">321</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets sites to search</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setSites
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$sites</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string[]</span>
+				<span class="var-name">$sites</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetStrictLang" id="setStrictLang"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setStrictLang</span> (line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a311">311</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets strict language filtering</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">YBC\Query</span>
+		<span class="method-name">
+			setStrictLang
+		</span>
+					(<span class="var-type">bool</span>&nbsp;<span class="var-name">$strict</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$strict</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetView" id="setView"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setView</span> (line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a343">343</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets view parameter</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setView
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$view</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$view</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+	<a name="sec-consts"></a>
+	<div class="info-box">
+		<div class="info-box-title">Class Constants</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendants</a> |
+										<a href="#sec-var-summary">Constants</a> (<span class="disabled">details</span>)
+						
+			
+												<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+														| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="constLOCALE_ARGENTINA" id="LOCALE_ARGENTINA"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">LOCALE_ARGENTINA</span>
+			 = <span class="const-default"> 'Argentina'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a17">17</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constLOCALE_AUSTRALIA" id="LOCALE_AUSTRALIA"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">LOCALE_AUSTRALIA</span>
+			 = <span class="const-default"> 'Australia'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a19">19</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constLOCALE_AUSTRIA" id="LOCALE_AUSTRIA"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">LOCALE_AUSTRIA</span>
+			 = <span class="const-default"> 'Austria'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a18">18</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constLOCALE_BRAZIL" id="LOCALE_BRAZIL"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">LOCALE_BRAZIL</span>
+			 = <span class="const-default"> 'Brazil'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a20">20</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constLOCALE_CANADA_ENGLISH" id="LOCALE_CANADA_ENGLISH"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">LOCALE_CANADA_ENGLISH</span>
+			 = <span class="const-default"> 'Canada - English'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a21">21</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constLOCALE_CANADA_FRENCH" id="LOCALE_CANADA_FRENCH"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">LOCALE_CANADA_FRENCH</span>
+			 = <span class="const-default"> 'Canada - French'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a22">22</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constLOCALE_CATALAN" id="LOCALE_CATALAN"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">LOCALE_CATALAN</span>
+			 = <span class="const-default"> 'Catalan'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a23">23</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constLOCALE_CHILE" id="LOCALE_CHILE"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">LOCALE_CHILE</span>
+			 = <span class="const-default"> 'Chile'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a24">24</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constLOCALE_COLUMBIA" id="LOCALE_COLUMBIA"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">LOCALE_COLUMBIA</span>
+			 = <span class="const-default"> 'Columbia'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a25">25</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constLOCALE_CZECH_REPUBLIC" id="LOCALE_CZECH_REPUBLIC"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">LOCALE_CZECH_REPUBLIC</span>
+			 = <span class="const-default"> 'Czech Republic'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a26">26</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constLOCALE_DENMARK" id="LOCALE_DENMARK"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">LOCALE_DENMARK</span>
+			 = <span class="const-default"> 'Denmark'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a27">27</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constLOCALE_FINLAND" id="LOCALE_FINLAND"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">LOCALE_FINLAND</span>
+			 = <span class="const-default"> 'Finland'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a28">28</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constLOCALE_FRANCE" id="LOCALE_FRANCE"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">LOCALE_FRANCE</span>
+			 = <span class="const-default"> 'France'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a29">29</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constLOCALE_GERMANY" id="LOCALE_GERMANY"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">LOCALE_GERMANY</span>
+			 = <span class="const-default"> 'Germany'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a30">30</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constLOCALE_HONG_KONG" id="LOCALE_HONG_KONG"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">LOCALE_HONG_KONG</span>
+			 = <span class="const-default"> 'Hong Kong'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a31">31</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constLOCALE_HUNGARY" id="LOCALE_HUNGARY"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">LOCALE_HUNGARY</span>
+			 = <span class="const-default"> 'Hungary'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a32">32</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constLOCALE_INDIA" id="LOCALE_INDIA"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">LOCALE_INDIA</span>
+			 = <span class="const-default"> 'India'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a35">35</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constLOCALE_INDONESIA_ENGLISH" id="LOCALE_INDONESIA_ENGLISH"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">LOCALE_INDONESIA_ENGLISH</span>
+			 = <span class="const-default"> 'Indonesia - English'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a33">33</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constLOCALE_INDONESIA_INDONESIAN" id="LOCALE_INDONESIA_INDONESIAN"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">LOCALE_INDONESIA_INDONESIAN</span>
+			 = <span class="const-default"> 'Indonesia - Indonesian'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a34">34</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constLOCALE_ISRAEL" id="LOCALE_ISRAEL"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">LOCALE_ISRAEL</span>
+			 = <span class="const-default"> 'Israel'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a36">36</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constLOCALE_ITALY" id="LOCALE_ITALY"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">LOCALE_ITALY</span>
+			 = <span class="const-default"> 'Italy'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a37">37</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constLOCALE_JAPAN" id="LOCALE_JAPAN"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">LOCALE_JAPAN</span>
+			 = <span class="const-default"> 'Japan'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a38">38</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constLOCALE_KOREA" id="LOCALE_KOREA"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">LOCALE_KOREA</span>
+			 = <span class="const-default"> 'Korea'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a39">39</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constLOCALE_MALAYSIA" id="LOCALE_MALAYSIA"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">LOCALE_MALAYSIA</span>
+			 = <span class="const-default"> 'Malaysia'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a41">41</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constLOCALE_MALAYSIA_ENGLISH" id="LOCALE_MALAYSIA_ENGLISH"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">LOCALE_MALAYSIA_ENGLISH</span>
+			 = <span class="const-default"> 'Malaysia - English'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a40">40</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constLOCALE_MEXICO" id="LOCALE_MEXICO"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">LOCALE_MEXICO</span>
+			 = <span class="const-default"> 'Mexico'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a42">42</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constLOCALE_NETHERLANDS" id="LOCALE_NETHERLANDS"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">LOCALE_NETHERLANDS</span>
+			 = <span class="const-default"> 'Netherlands'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a43">43</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constLOCALE_NEW_ZEALAND" id="LOCALE_NEW_ZEALAND"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">LOCALE_NEW_ZEALAND</span>
+			 = <span class="const-default"> 'New Zealand'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a44">44</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constLOCALE_NORWAY" id="LOCALE_NORWAY"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">LOCALE_NORWAY</span>
+			 = <span class="const-default"> 'Norway'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a45">45</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constLOCALE_PERU" id="LOCALE_PERU"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">LOCALE_PERU</span>
+			 = <span class="const-default"> 'Peru'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a46">46</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constLOCALE_PHILIPPINES" id="LOCALE_PHILIPPINES"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">LOCALE_PHILIPPINES</span>
+			 = <span class="const-default"> 'Philippines'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a47">47</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constLOCALE_PHILIPPINES_ENGLISH" id="LOCALE_PHILIPPINES_ENGLISH"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">LOCALE_PHILIPPINES_ENGLISH</span>
+			 = <span class="const-default"> 'Philippines - English'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a48">48</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constLOCALE_ROMANIA" id="LOCALE_ROMANIA"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">LOCALE_ROMANIA</span>
+			 = <span class="const-default"> 'Romania'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a49">49</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constLOCALE_RUSSIA" id="LOCALE_RUSSIA"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">LOCALE_RUSSIA</span>
+			 = <span class="const-default"> 'Russia'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a50">50</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constLOCALE_SINGAPORE" id="LOCALE_SINGAPORE"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">LOCALE_SINGAPORE</span>
+			 = <span class="const-default"> 'Singapore'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a51">51</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constLOCALE_SPAIN" id="LOCALE_SPAIN"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">LOCALE_SPAIN</span>
+			 = <span class="const-default"> 'Spain'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a52">52</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constLOCALE_SWEDEN" id="LOCALE_SWEDEN"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">LOCALE_SWEDEN</span>
+			 = <span class="const-default"> 'Sweden'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a53">53</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constLOCALE_SWITZERLAND_FRENCH" id="LOCALE_SWITZERLAND_FRENCH"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">LOCALE_SWITZERLAND_FRENCH</span>
+			 = <span class="const-default"> 'Switzerland - French'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a54">54</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constLOCALE_SWITZERLAND_GERMAN" id="LOCALE_SWITZERLAND_GERMAN"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">LOCALE_SWITZERLAND_GERMAN</span>
+			 = <span class="const-default"> 'Switzerland - German'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a55">55</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constLOCALE_SWITZERLAND_ITALIAN" id="LOCALE_SWITZERLAND_ITALIAN"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">LOCALE_SWITZERLAND_ITALIAN</span>
+			 = <span class="const-default"> 'Switzerland - Italian'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a56">56</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constLOCALE_TAIWAN" id="LOCALE_TAIWAN"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">LOCALE_TAIWAN</span>
+			 = <span class="const-default"> 'Taiwan'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a58">58</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constLOCALE_THAILAND" id="LOCALE_THAILAND"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">LOCALE_THAILAND</span>
+			 = <span class="const-default"> 'Thailand'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a57">57</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constLOCALE_TURKEY" id="LOCALE_TURKEY"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">LOCALE_TURKEY</span>
+			 = <span class="const-default"> 'Turkey'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a59">59</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constLOCALE_UNITED_KINGDOM" id="LOCALE_UNITED_KINGDOM"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">LOCALE_UNITED_KINGDOM</span>
+			 = <span class="const-default"> 'United Kingdom'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a60">60</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constLOCALE_UNITED_STATES_ENGLISH" id="LOCALE_UNITED_STATES_ENGLISH"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">LOCALE_UNITED_STATES_ENGLISH</span>
+			 = <span class="const-default"> 'United States - English'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a61">61</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constLOCALE_UNITED_STATES_SPANISH" id="LOCALE_UNITED_STATES_SPANISH"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">LOCALE_UNITED_STATES_SPANISH</span>
+			 = <span class="const-default"> 'United States - Spanish'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a62">62</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constLOCALE_VENEZUELA" id="LOCALE_VENEZUELA"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">LOCALE_VENEZUELA</span>
+			 = <span class="const-default"> 'Venezuela'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a63">63</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constLOCALE_VIETNAM" id="LOCALE_VIETNAM"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">LOCALE_VIETNAM</span>
+			 = <span class="const-default"> 'Vietnam'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_YBC__YBCAbstractQuery.php.html#a64">64</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+						
+		</div>
+	</div>
+
+	<p class="notes" id="credit">
+		Documentation generated on Thu, 14 Oct 2010 18:17:12 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.1</a>
+	</p>
+	</div></body>
+</html>

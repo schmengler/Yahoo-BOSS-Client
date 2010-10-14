@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>File Source for WebResult.php</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+						<h1>Source for file WebResult.php</h1>
+<p>Documentation is available at <a href="../YBC/_YBC---WebResult.php.html">WebResult.php</a></p>
+<div class="src-code">
+<div class="src-code"><ol><li><div class="src-line"><a name="a1"></a><span class="src-php">&lt;?php</span></div></li>
+<li><div class="src-line"><a name="a2"></a><span class="src-id">namespace&nbsp;YBC</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a3"></a><span class="src-doc">/**</span></div></li>
+<li><div class="src-line"><a name="a4"></a><span class="src-doc">&nbsp;*&nbsp;Single&nbsp;search&nbsp;result&nbsp;of&nbsp;web&nbsp;search</span></div></li>
+<li><div class="src-line"><a name="a5"></a><span class="src-doc">&nbsp;*&nbsp;</span></div></li>
+<li><div class="src-line"><a name="a6"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@author</span><span class="src-doc">&nbsp;Fabian&nbsp;Schmengler&nbsp;&lt;fschmengler@sgh-it.eu&gt;</span></div></li>
+<li><div class="src-line"><a name="a7"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@copyright</span><span class="src-doc">&nbsp;&amp;copy;&nbsp;2010&nbsp;SGH&nbsp;informationstechnologie&nbsp;UG</span></div></li>
+<li><div class="src-line"><a name="a8"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@license</span><span class="src-doc">&nbsp;BSD</span></div></li>
+<li><div class="src-line"><a name="a9"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@link</span><span class="src-doc">&nbsp;http://creativecommons.org/licenses/BSD/</span></div></li>
+<li><div class="src-line"><a name="a10"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@package</span><span class="src-doc">&nbsp;YBC</span></div></li>
+<li><div class="src-line"><a name="a11"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@version</span><span class="src-doc">&nbsp;1.0</span></div></li>
+<li><div class="src-line"><a name="a12"></a><span class="src-doc">&nbsp;*&nbsp;</span></div></li>
+<li><div class="src-line"><a name="a13"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@property-read&nbsp;</span><span class="src-doc-type">string&nbsp;</span><span class="src-doc-var">$abstract&nbsp;</span><span class="src-doc">Abstract&nbsp;with&nbsp;keywords&nbsp;highlighted&nbsp;with&nbsp;HTML&nbsp;tags.&nbsp;abstract=long&nbsp;&nbsp;will&nbsp;retrieve&nbsp;and&nbsp;display&nbsp;an&nbsp;abstract&nbsp;of&nbsp;a&nbsp;web&nbsp;document&nbsp;up&nbsp;to&nbsp;300&nbsp;characters.&nbsp;This&nbsp;expanded&nbsp;abstract&nbsp;provides&nbsp;the&nbsp;requester&nbsp;with&nbsp;a&nbsp;larger&nbsp;piece&nbsp;of&nbsp;information&nbsp;to&nbsp;work&nbsp;from&nbsp;in&nbsp;a&nbsp;web&nbsp;search&nbsp;query.</span></div></li>
+<li><div class="src-line"><a name="a14"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@property-read&nbsp;</span><span class="src-doc-type">string&nbsp;</span><span class="src-doc-var">$clickurl&nbsp;</span><span class="src-doc">Returns&nbsp;a&nbsp;navigation&nbsp;URL&nbsp;that&nbsp;leads&nbsp;to&nbsp;the&nbsp;target&nbsp;URL&nbsp;for&nbsp;each&nbsp;result.&nbsp;A&nbsp;clickurl&nbsp;might&nbsp;lead&nbsp;through&nbsp;a&nbsp;redirect&nbsp;server,&nbsp;which&nbsp;provides&nbsp;Yahoo!&nbsp;with&nbsp;important&nbsp;usage&nbsp;data&nbsp;from&nbsp;search&nbsp;result&nbsp;sets.&nbsp;See&nbsp;coding&nbsp;requirement&nbsp;(url&nbsp;&nbsp;vs&nbsp;clickurl)&nbsp;in&nbsp;overview</span></div></li>
+<li><div class="src-line"><a name="a15"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@property-read&nbsp;</span><span class="src-doc-type">string&nbsp;</span><span class="src-doc-var">$date&nbsp;</span><span class="src-doc">Returns&nbsp;date&nbsp;in&nbsp;YYYY/MM/DD&nbsp;format</span></div></li>
+<li><div class="src-line"><a name="a16"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@property-read&nbsp;</span><span class="src-doc-type">string&nbsp;</span><span class="src-doc-var">$dispurl&nbsp;</span><span class="src-doc">Returns&nbsp;the&nbsp;URLs&nbsp;of&nbsp;documents&nbsp;matching&nbsp;the&nbsp;query&nbsp;result.&nbsp;Use&nbsp;this&nbsp;field&nbsp;only&nbsp;for&nbsp;display&nbsp;purposes&nbsp;on&nbsp;result&nbsp;pages.&nbsp;To&nbsp;direct&nbsp;search&nbsp;users&nbsp;to&nbsp;the&nbsp;target&nbsp;document,&nbsp;use&nbsp;the&nbsp;clickurl&nbsp;value</span></div></li>
+<li><div class="src-line"><a name="a17"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@property-read&nbsp;</span><span class="src-doc-type">string&nbsp;</span><span class="src-doc-var">$language&nbsp;</span><span class="src-doc">The&nbsp;language&nbsp;of&nbsp;the&nbsp;document.</span></div></li>
+<li><div class="src-line"><a name="a18"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@property-read&nbsp;</span><span class="src-doc-type">string&nbsp;</span><span class="src-doc-var">$size&nbsp;</span><span class="src-doc">Returns&nbsp;the&nbsp;document’s&nbsp;size&nbsp;in&nbsp;bytes</span></div></li>
+<li><div class="src-line"><a name="a19"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@property-read&nbsp;</span><span class="src-doc-type">string&nbsp;</span><span class="src-doc-var">$title&nbsp;</span><span class="src-doc">Title&nbsp;with&nbsp;keywords&nbsp;highlighted&nbsp;with&nbsp;HTML&nbsp;tags</span></div></li>
+<li><div class="src-line"><a name="a20"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@property-read&nbsp;</span><span class="src-doc-type">string&nbsp;</span><span class="src-doc-var">$url&nbsp;</span><span class="src-doc">URL&nbsp;of&nbsp;result</span></div></li>
+<li><div class="src-line"><a name="a21"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@property-read&nbsp;</span><span class="src-doc-type">string&nbsp;</span><span class="src-doc-var">$delicious_saves&nbsp;</span><span class="src-doc">The&nbsp;number&nbsp;of&nbsp;times&nbsp;a&nbsp;document&nbsp;was&nbsp;saved&nbsp;in&nbsp;delicious.</span></div></li>
+<li><div class="src-line"><a name="a22"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@property-read&nbsp;</span><span class="src-doc-type">string&nbsp;</span><span class="src-doc-var">$delicious_toptags&nbsp;</span><span class="src-doc">Retrieves&nbsp;the&nbsp;top&nbsp;public&nbsp;delicious&nbsp;tags&nbsp;for&nbsp;a&nbsp;document&nbsp;and&nbsp;the&nbsp;counts&nbsp;associated&nbsp;with&nbsp;each&nbsp;tag.</span></div></li>
+<li><div class="src-line"><a name="a23"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@property-read&nbsp;</span><span class="src-doc-type">string&nbsp;</span><span class="src-doc-var">$keyterms&nbsp;</span><span class="src-doc">When&nbsp;view=keyterms&nbsp;is&nbsp;used&nbsp;in&nbsp;query&nbsp;string&nbsp;the&nbsp;keyterms&nbsp;&nbsp;section&nbsp;is&nbsp;included&nbsp;in&nbsp;the&nbsp;response.&nbsp;This&nbsp;includes&nbsp;a&nbsp;list&nbsp;of&nbsp;related&nbsp;words&nbsp;and&nbsp;phrases&nbsp;with&nbsp;the&nbsp;&lt;term&gt;&nbsp;subheadings.</span></div></li>
+<li><div class="src-line"><a name="a24"></a><span class="src-doc">&nbsp;*&nbsp;</span></div></li>
+<li><div class="src-line"><a name="a25"></a><span class="src-doc">&nbsp;*/</span></div></li>
+<li><div class="src-line"><a name="a26"></a><span class="src-key">class&nbsp;</span><a href="../YBC/WebResult.html">WebResult</a>&nbsp;<span class="src-key">extends&nbsp;</span><a href="../YBC/Result.html">Result</a></div></li>
+<li><div class="src-line"><a name="a27"></a><span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a28"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">protected&nbsp;</span><a href="../YBC/WebResult.html#var$size">$size</a><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a29"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">protected&nbsp;</span><a href="../YBC/WebResult.html#var$dispurl">$dispurl</a><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a30"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">protected&nbsp;</span><a href="../YBC/WebResult.html#var$language">$language</a><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a31"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">protected&nbsp;</span><a href="../YBC/WebResult.html#var$delicious_saves">$delicious_saves</a><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a32"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">protected&nbsp;</span><a href="../YBC/WebResult.html#var$delicious_toptags">$delicious_toptags</a><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a33"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">protected&nbsp;</span><a href="../YBC/WebResult.html#var$keyterms">$keyterms</a><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a34"></a><span class="src-sym">}</span></div></li>
+</ol></div>
+</div>
+	<p class="notes" id="credit">
+		Documentation generated on Thu, 14 Oct 2010 18:17:46 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.1</a>
+	</p>
+	</body>
+</html>
