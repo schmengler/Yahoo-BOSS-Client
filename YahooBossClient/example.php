@@ -13,7 +13,7 @@ date_default_timezone_set('Europe/Berlin');
  * initialize client and cache
  */
 require 'YBC.lib.php';
-$appId = "2p7mAcbV34Fq98_kZD4GKO9KuGcBdJZfpG.PiS5HkOZJO7TNPmUYn5YsCqX3uyCVnWI-";
+$appId = 'your-appid-here!';
 $cache = new YBC\FileCache();
 $ybc = new YBC\Client($appId, $cache);
 

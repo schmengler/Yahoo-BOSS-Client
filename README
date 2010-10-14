@@ -1,0 +1,5 @@
+Yahoo BOSS (Build your Own Search Service) is a free search API. This package can retrieve results of web, news and image search and also cache them.
+
+Requires PHP 5.3 with allow_url_fopen=on
+
+For usage see example.php or the phpDoc documentation
