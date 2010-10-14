@@ -2,4 +2,8 @@ Yahoo BOSS (Build your Own Search Service) is a free search API. This package ca
 
 Requires PHP 5.3 with allow_url_fopen=on
 
-For usage see example.php or the phpDoc documentation
+For usage see example.php, YahooBossClient/README.TXT or the phpDoc documentation
+
+The BOSS API reference can be found here:
+
+http://developer.yahoo.com/search/boss/boss_guide/index.html
