@@ -29,8 +29,8 @@ Files
 -----
 readme.txt - the file you are reading right now
 license.txt - BSD license
-YBC.lib.php - library loader, include this file to use the package
 example.php - example: simple demonstration
+YBC.lib.php - library loader, include this file to use the package
 YBC/AbstractQuery.php - class file: base class for queries
 YBC/AbstractResult.php - class file: base class for result
 YBC/Cache.php - class file: cache interface

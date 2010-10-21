@@ -86,7 +86,7 @@ class FileCache implements Cache
 	 */
 	public function deleteAll()
 	{
-		foreach(new GlobIterator($this->cacheDir . '/ybc_*.cache.php', FilesystemIterator::CURRENT_AS_PATHNAME ) as $file) {
+		foreach(new GlobIterator($this->cacheDir . sprintf(self::$cachePattern, '*'), FilesystemIterator::CURRENT_AS_PATHNAME ) as $file) {
 			unlink($file);
 		}
 	}
