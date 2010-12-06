@@ -291,7 +291,7 @@ abstract class AbstractQuery implements Query
 	public function setLocale($locale)
 	{
 		if (array_key_exists($locale, self::$supportedRegionsAndLanguages)) {
-			list($this->region, $this->lang) = self::$supportedRegionsAndLanguages[$locale];
+			list($this->region, $this->lang) = array_values(self::$supportedRegionsAndLanguages[$locale]);
 			return $this;
 		}
 		list($region, $lang) = explode('-', $locale) + array(1=>$locale);
