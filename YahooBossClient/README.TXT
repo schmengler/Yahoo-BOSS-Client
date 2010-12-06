@@ -7,6 +7,7 @@
 - Files
 - Step-by-Step Usage
 - Extending
+- PHP 5.2 compatibility
 
 Synopsis
 --------
@@ -24,11 +25,14 @@ You will need a BOSS AppId from Yahoo. Get one for free at:
 
 	http://developer.yahoo.com/boss
 
+Since v1.1 a PHP 5.2 compatible version is included in YBC/Legacy/YBC.
+See PHP 5.2 compatibility below.
 
 Files
 -----
 readme.txt - the file you are reading right now
 license.txt - BSD license
+changelog.txt - version history
 example.php - example: simple demonstration
 YBC.lib.php - library loader, include this file to use the package
 YBC/AbstractQuery.php - class file: base class for queries
@@ -46,6 +50,8 @@ YBC/Query.php - class file: query interface
 YBC/ResultSet.php - class file: class for the whole result
 YBC/WebQuery.php - class file: class for web search queries
 YBC/WebResult.php - class file: class for web search results
+YBC/Legacy/YBC/YBC.inc - library loader: include this to use the legacy package
+YBC/Legacy/YBC/*.php - class files: legacy package (PHP 5.2 compatible version)
 
 
 Step-by-Step Usage
@@ -186,3 +192,24 @@ should work out pretty good:
 
 The spl_object_hash() function is NOT appliable here because it only hashes the
 object id to identify an object at runtime!
+
+
+PHP 5.2 compatibility
+---------------------
+
+If your server runs with PHP 5.2 you have to use the legacy version. Just include
+YBC/Legacy/YBC/YBC.inc instead of YBC.lib.php.
+
+It works pretty much the same but for the class names you have to write
+YBC_Legacy_Client instead of YBC\Client and so on.
+
+The only difference aside from the class names is that there is no DateInterval
+class for the cache lifetime parameter. Thus some method signatures of the
+client class change:
+
+	+ query(YBC_Query $query, boolean $useCache = true, int $cacheLifeTime = null)
+	+ setDefaultCacheLifeTime(int $defaultCacheLifeTime)
+
+where the integer values represent the interval in seconds. The same goes if you
+use methods of the Cache classes directly, for example the garbageCollector()
+method of YBC_Legacy_FileCache.
